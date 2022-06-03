@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
 import { addingBook } from '../redux/books/booksActions';
 
-const Form = () => {
+function Form() {
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
 
@@ -43,6 +43,6 @@ const Form = () => {
       </form>
     </div>
   );
-};
+}
 
 export default Form;

@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import SingleBook from './SingleBook';
 import { gettingBooks } from '../redux/books/booksActions';
 
-const BooksList = () => {
+function BooksList() {
   const books = useSelector((state) => state.booksReducer);
   const dispatch = useDispatch();
 
@@ -23,6 +23,6 @@ const BooksList = () => {
       )}
     </ul>
   );
-};
+}
 
 export default BooksList;

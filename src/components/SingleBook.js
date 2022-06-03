@@ -1,9 +1,9 @@
+/* eslint-disable camelcase */
 import { useDispatch } from 'react-redux';
 import { removingBook } from '../redux/books/booksActions';
 import progressImage from '../Images/stats.png';
 
-
-const SingleBook = (book) => {
+function SingleBook(book) {
   const {
     item_id, category, title,
   } = book;
@@ -49,6 +49,6 @@ const SingleBook = (book) => {
       </div>
     </li>
   );
-};
+}
 
 export default SingleBook;
