@@ -2,6 +2,7 @@ import {
   BrowserRouter as Router, Routes, Route,
 } from 'react-router-dom';
 import { Provider } from 'react-redux';
+import store from './redux/configureStore';
 import './App.css';
 import Header from './components/Header';
 import Books from './components/pages/Books';
