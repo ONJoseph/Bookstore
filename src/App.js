@@ -1,26 +1,14 @@
-import {
-  BrowserRouter as Router, Routes, Route,
-} from 'react-router-dom';
-import { Provider } from 'react-redux';
-import store from './redux/configureStore';
-import './App.css';
-import Header from './components/Header';
-import Books from './components/pages/Books';
-import Categories from './components/pages/Categories';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Container from './components/container/Container';
 
 function App() {
   return (
-    <Provider store={store}>
-      <Router>
-        <main className="container">
-          <Header />
-          <Routes>
-            <Route path="/" exact element={<Books />} />
-            <Route path="/categories" exact element={<Categories />} />
-          </Routes>
-        </main>
+    <React.StrictMode>
+      <Router basename={process.env.PUBLIC_URL}>
+        <Container />
       </Router>
-    </Provider>
+    </React.StrictMode>
   );
 }
 

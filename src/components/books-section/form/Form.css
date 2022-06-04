@@ -1,0 +1,58 @@
+.formBookAdd {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.0625rem;
+}
+
+.formBookAdd > h3 {
+  width: 10.875rem;
+  height: 1.5rem;
+  margin: 1rem 0 1rem 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: row;
+  gap: 2.125rem;
+  height: 2.813rem;
+}
+
+.formInput {
+  width: calc(1.25 * 33.928%);
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0.813rem 1.063rem 0.813rem 1.063rem;
+  border: 1px solid #e8e8e8;
+  border-radius: 4px;
+}
+
+.formInput::placeholder {
+  width: 4.75rem;
+  height: 1.188rem;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  letter-spacing: -0.15px;
+  color: #c4c4c4;
+}
+
+.addBookBtn {
+  box-sizing: border-box;
+  width: calc(1.25 * 13.142857142%);
+  height: 100%;
+  padding: 0.801rem 1.188rem 0.886rem 1.375rem;
+  border-radius: 3px;
+  border: none;
+  background-color: #0290ff;
+  color: white;
+  font-family: 'RobotoSlab', sans-serif;
+  font-size: 0.813rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
