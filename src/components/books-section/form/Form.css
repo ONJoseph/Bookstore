@@ -8,8 +8,8 @@
 .formBookAdd > h3 {
   width: 10.875rem;
   height: 1.5rem;
-  margin: 1rem 0 1rem 0;
-  font-family: 'Montserrat', sans-serif;
+  margin: 1rem 0;
+  font-family: Montserrat, sans-serif;
   font-size: 1.25rem;
   font-weight: bold;
   letter-spacing: -0.18px;
@@ -27,7 +27,7 @@
   width: calc(1.25 * 33.928%);
   height: 100%;
   box-sizing: border-box;
-  padding: 0.813rem 1.063rem 0.813rem 1.063rem;
+  padding: 0.813rem 1.063rem;
   border: 1px solid #e8e8e8;
   border-radius: 4px;
 }
@@ -35,7 +35,7 @@
 .formInput::placeholder {
   width: 4.75rem;
   height: 1.188rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Montserrat, sans-serif;
   font-size: 1rem;
   letter-spacing: -0.15px;
   color: #c4c4c4;
@@ -50,7 +50,7 @@
   border: none;
   background-color: #0290ff;
   color: white;
-  font-family: 'RobotoSlab', sans-serif;
+  font-family: RobotoSlab, sans-serif;
   font-size: 0.813rem;
   font-weight: bold;
   letter-spacing: 0.5px;

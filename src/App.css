@@ -13,7 +13,7 @@ a {
 
 .nav-menu {
   padding: 50px 0;
-  margin: -20px 0 0 0;
+  margin: -20px 0 0;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -26,12 +26,12 @@ a {
 }
 
 .menu-li {
-  margin: 2.2px 40px 0 40px;
-  color: rgb(95, 95, 95);
+  margin: 2.2px 40px 0;
+  color: rgb(95 95 95);
 }
 
 .logo {
-  color: rgb(0, 132, 255);
+  color: rgb(0 132 255);
   margin: 0 0 0 40px;
   font-size: 35px;
 }
@@ -64,7 +64,7 @@ a {
   width: 100%;
   align-items: center;
   justify-content: space-between;
-  background-color: rgb(196, 209, 233);
+  background-color: rgb(196 209 233);
 }
 
 .book-container-white {
@@ -82,6 +82,6 @@ a {
 }
 
 .books-author {
-  color: rgb(75, 75, 196);
+  color: rgb(75 75 196);
   margin-left: 15px;
 }
