@@ -7,21 +7,21 @@ function Books() {
   const books = [
     {
       id: '1',
-      author: 'Daniel',
-      title: 'How to get away with mass murder',
-      category: 'adventure',
+      author: 'Joseph',
+      title: 'How to Achieve Mastery in Software Development',
+      category: 'Software',
     },
     {
       id: '2',
-      author: 'Arturo',
+      author: 'Armaury',
       title: 'How To Make A Professional Resume',
-      category: 'adventure',
+      category: 'Adventure',
     },
     {
       id: '3',
-      author: 'Luis',
-      title: 'Polygons Are Old-School, Multigons Are In',
-      category: 'maths',
+      author: 'Akasha',
+      title: 'The Unbearable Lightness of Being',
+      category: 'Lifestyle',
     },
   ];
 
