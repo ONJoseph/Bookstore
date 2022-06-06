@@ -1,4 +1,4 @@
-//Bookstore
+// Bookstore
 import { configureStore, combineReducers } from 'redux';
 
 import booksReducer from './books/books';
