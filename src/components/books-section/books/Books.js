@@ -1,29 +1,11 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 import './Books.css';
 import Book from './book/Book';
 
 function Books() {
-  const books = [
-    {
-      id: '1',
-      author: 'Joseph',
-      title: 'How to Achieve Mastery in Software Development',
-      category: 'Software',
-    },
-    {
-      id: '2',
-      author: 'Armaury',
-      title: 'How To Make A Professional Resume',
-      category: 'Adventure',
-    },
-    {
-      id: '3',
-      author: 'Akasha',
-      title: 'The Unbearable Lightness of Being',
-      category: 'Lifestyle',
-    },
-  ];
+  const books = useSelector((state) => state.book);
 
   return (
     <div>
