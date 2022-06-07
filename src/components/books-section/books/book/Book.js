@@ -1,10 +1,12 @@
 import React from 'react';
-
+import { useDispatch } from 'react-redux';
 import { PropTypes } from 'prop-types';
+import { removeBook } from '../../../../redux/books/books';
 
 import './Book.css';
 
 function Book(props) {
+  const dispatch = useDispatch();
   const {
     id, author, title, category,
   } = props;
@@ -13,16 +15,23 @@ function Book(props) {
       id: 1,
       href: '#',
       name: 'Comments',
+      dispatch: () => {},
     },
     {
       id: 2,
       href: '#',
       name: 'Remove',
+      dispatch: () => {
+        dispatch(removeBook(
+          { id },
+        ));
+      },
     },
     {
       id: 3,
       href: '#',
       name: 'Edit',
+      dispatch: () => {},
     },
   ];
   return (
@@ -37,7 +46,13 @@ function Book(props) {
           <ul className="actions">
             {links && links.map((link) => (
               <li key={link.id} className="action">
-                <a href={link.href}>{link.name}</a>
+                <a
+                  href={link.href}
+                  type="button"
+                  onClick={link.dispatch}
+                >
+                  {link.name}
+                </a>
               </li>
             ))}
           </ul>
