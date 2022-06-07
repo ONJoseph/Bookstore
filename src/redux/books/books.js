@@ -43,5 +43,5 @@ export function addBook(obj) {
 }
 
 export function removeBook(obj) {
-  return { type: ADD_BOOK, payload: obj };
+  return { type: REMOVE_BOOK, payload: obj };
 }
