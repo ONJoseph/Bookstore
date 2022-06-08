@@ -6,9 +6,9 @@ import {
 
 import storage from '../modules/localStorage';
 
-storage.getLocal();
-
 const createApp = () => http.post(appsEndpoint);
+
+storage.getLocal(createApp);
 
 const createBook = (data) => http.post(`${appsEndpoint}/${storage.appId}${booksEndpoint}`, data);
 
