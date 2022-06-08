@@ -10,9 +10,9 @@ const defaultState = [
   },
   {
     id: '2',
-    author: 'Armaury',
-    title: 'How To Make A Professional Resume',
-    category: 'Adventure',
+    author: 'John Smith',
+    title: 'The Great Gatsby',
+    category: 'Fiction',
   },
   {
     id: '3',
