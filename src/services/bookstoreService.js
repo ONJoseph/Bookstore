@@ -1,17 +1,21 @@
 import http from '../API-commons';
 
 import {
-  appsEndpoint, appIdEndpoint, itemIdEndpoint, booksEndpoint,
+  appsEndpoint, itemIdEndpoint, booksEndpoint,
 } from '../modules/endpoints';
+
+import storage from '../modules/localStorage';
+
+storage.getLocal();
 
 const createApp = () => http.post(appsEndpoint);
 
-const createBook = (id) => http.post(appsEndpoint + appIdEndpoint(id) + booksEndpoint);
+const createBook = (data) => http.post(`${appsEndpoint}/${storage.appId}${booksEndpoint}`, data);
 
-const getBooks = (id) => http.get(appsEndpoint + appIdEndpoint(id) + booksEndpoint);
+const getBooks = () => http.get(`${appsEndpoint}/${storage.appId}${booksEndpoint}`);
 
-const deleteBook = (appId, bookId) => http.delete(
-  appsEndpoint + appIdEndpoint(appId) + booksEndpoint + itemIdEndpoint(bookId),
+const deleteBook = (bookId) => http.delete(
+  `${appsEndpoint}/${storage.appId}${booksEndpoint}${itemIdEndpoint(bookId)}`,
 );
 
 const BookstoreService = {
