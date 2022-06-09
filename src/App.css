@@ -4,6 +4,8 @@
   box-sizing: inherit;
 }
 
+/* Custom colors */
+
 :root {
   --bubble-gum-pink: #ff5ab7;
   --black: #1e1e1e;
