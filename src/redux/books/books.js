@@ -2,7 +2,8 @@
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
 const REMOVE_BOOK = 'bookstore/books/REMOVE_BOOK';
 const BOOKS_LOADED = 'BOOKS_LOADED';
-const defaultState = [
+
+const initialState = [
   {
     id: '1',
     author: 'Joseph',
@@ -24,7 +25,7 @@ const defaultState = [
 ];
 
 // Reducer Section
-export default function reducer(state = defaultState, action = {}) {
+export default function reducer(state = initialState, action) {
   switch (action.type) {
     case BOOKS_LOADED:
       return action.payload;
