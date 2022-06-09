@@ -1,14 +1,21 @@
-import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
-import Container from './components/container/Container';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import './App.css';
+import Navbar from './components/Navbar';
+import Books from './pages/Books';
+import Categories from './pages/Categories';
 
 function App() {
   return (
-    <React.StrictMode>
-      <Router basename={process.env.PUBLIC_URL}>
-        <Container />
+    <div className="App">
+      <Router>
+        <Navbar />
+        <hr className="line" />
+        <Routes>
+          <Route index element={<Books />} />
+          <Route path="/categories" element={<Categories />} />
+        </Routes>
       </Router>
-    </React.StrictMode>
+    </div>
   );
 }
 
