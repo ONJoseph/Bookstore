@@ -11,9 +11,9 @@ const reducers = combineReducers({
   categories: categoriesReducer,
 });
 
-const store = createStore(
+const bookstorestore = createStore(
   reducers,
   applyMiddleware(thunk),
 );
 
-export default store;
+export default bookstorestore;
