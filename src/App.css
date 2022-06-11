@@ -14,12 +14,13 @@
   --pale-grey: #f5f6fa;
   --warm-grey: #888;
   --white: #fff;
+  --white-dull: #e8e8e8;
+  --white-sharp: #fafafa;
   --very-light-pink: #c4c4c4;
   --medium-blue: #307bbe;
-  --black-two: #121212;
+  --black-sharp: #121212;
   --azure: #0290ff;
-  --white-two: #e8e8e8;
-  --white-three: #fafafa;
+  
 }
 
 body,
@@ -81,13 +82,13 @@ nav ul {
   font-family: Montserrat, serif;
   font-weight: normal;
   font-size: 0.813rem;
-  color: var(--black-two);
+  color: var(--black-sharp);
   text-decoration: none;
   letter-spacing: 1.9px;
 }
 
 .line {
-  border: 1px solid var(--white-two);
+  border: 1px solid var(--white-dull);
 }
 
 .books-line {
@@ -110,7 +111,7 @@ nav ul {
 
 .book {
   display: flex;
-  border: 1px solid var(--white-two);
+  border: 1px solid var(--white-dull);
   background-color: var(--white);
   padding: 2rem 1.688rem 1.75rem;
   margin-bottom: 0.938rem;
@@ -132,14 +133,14 @@ nav ul {
   opacity: 0.5;
   font-size: 0.875rem;
   font-weight: bold;
-  color: var(--black-two);
+  color: var(--black-sharp);
 }
 
 .book-title {
   font-family: "RobotoSlab Bold", serif;
   font-size: 1.375rem;
   font-weight: bold;
-  color: var(--black-two);
+  color: var(--black-sharp);
 }
 
 .book-actions {
@@ -167,7 +168,7 @@ nav ul {
   content: "|";
   margin: 0 0.938rem;
   line-height: 1.5rem;
-  color: var(--white-two);
+  color: var(--white-dull);
 }
 
 .book-progress {
@@ -186,7 +187,7 @@ nav ul {
   font-family: Montserrat, serif;
   font-size: 2rem;
   font-weight: normal;
-  color: var(--black-two);
+  color: var(--black-sharp);
 }
 
 .percentage-completed {
@@ -194,7 +195,7 @@ nav ul {
   font-family: Montserrat, serif;
   font-size: 0.875rem;
   font-weight: normal;
-  color: var(--black-two);
+  color: var(--black-sharp);
 }
 
 .current-chapter {
@@ -202,7 +203,7 @@ nav ul {
   font-family: "RobotoSlab Light", serif;
   font-size: 0.813rem;
   font-weight: 300;
-  color: var(--black-two);
+  color: var(--black-sharp);
 }
 
 .chapter {
@@ -210,11 +211,11 @@ nav ul {
   font-size: 1rem;
   font-weight: 300;
   letter-spacing: -0.4px;
-  color: var(--black-two);
+  color: var(--black-sharp);
 }
 
 .chapter-info {
-  border-left: solid 1px var(--white-two);
+  border-left: solid 1px var(--white-dull);
   padding-left: 4%;
   margin-left: -4%;
 }
@@ -255,7 +256,7 @@ nav ul {
 .form input {
   height: 2.813rem;
   border-radius: 4px;
-  border: solid 1px var(--white-two);
+  border: solid 1px var(--white-dull);
   background-color: var(--white);
   width: 40%;
   margin-right: 2.125rem;
